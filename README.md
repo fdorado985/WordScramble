@@ -7,3 +7,6 @@
 An anagram game that uses closures and booleans
 
 ## Demo
+| Screenshot 01 |
+| ------------- |
+| ![screenshot01](.screenshots/screenshot01.png) |
