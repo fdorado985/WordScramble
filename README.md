@@ -16,3 +16,8 @@ An anagram game that uses closures and booleans
 | Screenshot 02 |
 | ------------- |
 | ![screenshot02](.screenshots/screenshot02.png) |
+
+### features/pick-a-word-any-word
+| Screenshot 03 |
+| ------------- |
+| ![screenshot03](.screenshots/screenshot03.png) |

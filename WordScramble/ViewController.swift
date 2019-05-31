@@ -20,6 +20,9 @@ class ViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    // NavigationBar
+    navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(promptForAnswer))
+
     // Look for the file
     if let startWordsPath = Bundle.main.path(forResource: "start", ofType: "txt") {
       // Read the content of file
@@ -39,6 +42,23 @@ class ViewController: UITableViewController {
     title = allWords.randomElement()
     usedWords.removeAll(keepingCapacity: true)
     tableView.reloadData()
+  }
+
+  @objc func promptForAnswer() {
+    let ac = UIAlertController(title: "Enter answer", message: nil, preferredStyle: .alert)
+    ac.addTextField()
+
+    let submitAction = UIAlertAction(title: "Submit", style: .default) { [unowned self, ac] (action) in
+      let answer = ac.textFields![0]
+      self.submit(answer: answer.text!)
+    }
+
+    ac.addAction(submitAction)
+    present(ac, animated: true)
+  }
+
+  func submit(answer: String) {
+    
   }
 }
 
