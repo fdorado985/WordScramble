@@ -7,6 +7,12 @@
 An anagram game that uses closures and booleans
 
 ## Demo
+### features/setting-up
 | Screenshot 01 |
 | ------------- |
 | ![screenshot01](.screenshots/screenshot01.png) |
+
+### features/read-from-disk
+| Screenshot 02 |
+| ------------- |
+| ![screenshot02](.screenshots/screenshot02.png) |

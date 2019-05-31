@@ -12,6 +12,7 @@
 		A9A3308B22A1B8AA00619C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A3308922A1B8AA00619C3F /* Main.storyboard */; };
 		A9A3308D22A1B8AA00619C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A3308C22A1B8AA00619C3F /* Assets.xcassets */; };
 		A9A3309022A1B8AA00619C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A3308E22A1B8AA00619C3F /* LaunchScreen.storyboard */; };
+		A9A3309822A1BD6300619C3F /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = A9A3309722A1BD6300619C3F /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A9A3308C22A1B8AA00619C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9A3308F22A1B8AA00619C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9A3309122A1B8AA00619C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9A3309722A1BD6300619C3F /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		A9A3308422A1B8AA00619C3F /* WordScramble */ = {
 			isa = PBXGroup;
 			children = (
+				A9A3309722A1BD6300619C3F /* start.txt */,
 				A9A3308522A1B8AA00619C3F /* AppDelegate.swift */,
 				A9A3308722A1B8AA00619C3F /* ViewController.swift */,
 				A9A3308922A1B8AA00619C3F /* Main.storyboard */,
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9A3309022A1B8AA00619C3F /* LaunchScreen.storyboard in Resources */,
+				A9A3309822A1BD6300619C3F /* start.txt in Resources */,
 				A9A3308D22A1B8AA00619C3F /* Assets.xcassets in Resources */,
 				A9A3308B22A1B8AA00619C3F /* Main.storyboard in Resources */,
 			);
