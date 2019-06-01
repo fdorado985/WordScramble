@@ -21,3 +21,8 @@ An anagram game that uses closures and booleans
 | Screenshot 03 |
 | ------------- |
 | ![screenshot03](.screenshots/screenshot03.png) |
+
+### features/returning-values
+| Screenshot 04 | Screenshot 05 |
+| ------------- | ------------- |
+| ![screenshot04](.screenshots/screenshot04.png) | ![screenshot05](.screenshots/screenshot05.png) |
