@@ -26,3 +26,8 @@ An anagram game that uses closures and booleans
 | Screenshot 04 | Screenshot 05 |
 | ------------- | ------------- |
 | ![screenshot04](.screenshots/screenshot04.png) | ![screenshot05](.screenshots/screenshot05.png) |
+
+### features/feedback-for-user
+| Screenshot 06 | Screenshot 07 | Screenshot 08 |
+| ------------- | ------------- | ------------- |
+| ![screenshot06](.screenshots/screenshot06.png) | ![screenshot07](.screenshots/screenshot07.png) | ![screenshot08](.screenshots/screenshot08.png) |
