@@ -50,6 +50,7 @@ class ViewController: UITableViewController {
 
     let defaults = UserDefaults.standard
     defaults.set(title, forKey: "word")
+    defaults.removeObject(forKey: "usedWords")
     defaults.synchronize()
   }
 
