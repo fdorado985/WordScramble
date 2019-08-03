@@ -33,15 +33,24 @@ class ViewController: UITableViewController {
       allWords = ["silkworm"]
     }
 
-    startGame()
+    loadLastState()
   }
 
+  // MARK: - Actions
+
+  @IBAction func resetBarButtonTapped(_ sender: UIBarButtonItem) {
+    startGame()
+  }
   // MARK: - Public Methods
 
   func startGame() {
     title = allWords.randomElement()
     usedWords.removeAll(keepingCapacity: true)
     tableView.reloadData()
+
+    let defaults = UserDefaults.standard
+    defaults.set(title, forKey: "word")
+    defaults.synchronize()
   }
 
   @objc func promptForAnswer() {
@@ -70,6 +79,7 @@ class ViewController: UITableViewController {
 
           let indexPath = IndexPath(row: 0, section: 0)
           tableView.insertRows(at: [indexPath], with: .automatic)
+          save()
           return
         } else {
           errorTitle = "Word not recognised"
@@ -118,6 +128,32 @@ class ViewController: UITableViewController {
 
     // Return our compare
     return misspelledRange.location == NSNotFound
+  }
+
+  func loadLastState() {
+    let defaults = UserDefaults.standard
+    if let savedTitle = defaults.object(forKey: "word") as? String, let savedData = defaults.object(forKey: "usedWords") as? Data {
+      title = savedTitle
+      let jsonDecoder = JSONDecoder()
+      do {
+        usedWords = try jsonDecoder.decode([String].self, from: savedData)
+      } catch {
+        print("Error trying to decode data")
+      }
+    } else {
+      startGame()
+    }
+  }
+
+  func save() {
+    let jsonEncoder = JSONEncoder()
+    if let savedData = try? jsonEncoder.encode(usedWords) {
+      let defaults = UserDefaults.standard
+      defaults.set(savedData, forKey: "usedWords")
+      defaults.synchronize()
+    } else {
+      print("Failed to save people.")
+    }
   }
 }
 

@@ -41,7 +41,13 @@
                             <outlet property="delegate" destination="HGj-nS-gwV" id="Zmb-1O-zpq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jBK-9k-7se"/>
+                    <navigationItem key="navigationItem" id="jBK-9k-7se">
+                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="aHW-bX-fmP">
+                            <connections>
+                                <action selector="resetBarButtonTapped:" destination="HGj-nS-gwV" id="zit-Gl-aZE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VeT-a8-C9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
